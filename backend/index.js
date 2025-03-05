@@ -4,6 +4,8 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import { dbConnect } from "./src/db/moongooseDb.js";
+import UserRouter from "./src/routes/user.js";
+import EventRouter from "./src/routes/event.js";
 
 dotenv.config();
 
@@ -19,6 +21,10 @@ app.get("/", (req, res) => {
     res.send("Hello World");
     }
 );
+
+//routes
+app.use("/", UserRouter);
+app.use("/event", EventRouter);
 app.listen(PORT, async () => {
   try {
     await dbConnect(MONGO_URI, PORT);
