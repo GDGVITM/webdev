@@ -6,8 +6,6 @@ export async function  dbConnect (url,port) {
         await mongoose.connect(url, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
-            useFindAndModify: false,
-            useCreateIndex: true
         }).then(
             ()=>{
                 `server listening at ${port}`
