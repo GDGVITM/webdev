@@ -109,7 +109,7 @@ const AboutSection = (props) => {
       <h1 className="text-4xl md:text-6xl font-extrabold leading-snug mt-8 md:mt-0">
         Hi, I'm
         <br />
-        <div ref={anim} className="bg-transparent px-1 italic">Abhishek Dubey</div>
+        <div ref={anim} className="bg-transparent px-1 italic">Your Name</div>
       </h1>
       <motion.p
         className="text-lg text-gray-600 mt-4"
@@ -125,10 +125,9 @@ const AboutSection = (props) => {
           duration: 1,
           delay: 1.5,
         }}
-      >
-        I write code the way no one else can.
+      >Discription
         <br />
-        come explore who am I?
+        About yourself
       </motion.p>
       <motion.button
         ref={hire}
@@ -156,31 +155,31 @@ const AboutSection = (props) => {
 
 const skills = [
   {
-    title: "Web / React , Next , Node ",
+    title: "enter skill one",
     level: 90,
   },
   {
-    title: "App / Java , Kotlin , React Native",
+    title: "skill 2",
     level: 70,
   },
   {
-    title: "C , C++ , Python , Typescript",
+    title: "skill 3",
     level: 90,
   },
   {
-    title: "Cyber Security , ML",
+    title: "skill 4",
     level: 50,
   },
   {
-    title: "Database , Cloud",
+    title: "skill 5",
     level: 40,
   },
   {
-    title: "Assembly , OS , Embedded",
+    title: "skill 6",
     level: 80,
   },
   {
-    title: "3d Modelling , Blender , Unreal",
+    title: "others",
     level: 40,
   },
 ];

@@ -48,7 +48,7 @@ export const Background = () => {
           ref={material}
           side={THREE.BackSide}
           toneMapped={false}
-          color="#fbbbff"
+          color="#422C6C"
           // map={new THREE.TextureLoader().load(
           //   "../assets/Rock051_1K-JPG/Rock051_1K-JPG_Roughness.jpg"
           // )}
@@ -57,15 +57,14 @@ export const Background = () => {
       <Sphere scale={[5, 5, 5]} position={[10, 10, -50]}>
         <meshBasicMaterial color="#ffcc00" /> {/* Set the color of the sun to yellow */}
       </Sphere>
-      {/* Add more planets */}
       <Sphere ref={(el) => (planets.current[0] = el)} scale={[10, 10, 10]} position={[20, -10, -100]}>
-        <meshBasicMaterial color="#ff0000" /> {/* Red Planet */}
+        <meshBasicMaterial color="#6A599D" />
       </Sphere>
       <Sphere ref={(el) => (planets.current[1] = el)} scale={[8, 8, 8]} position={[-30, 20, -80]}>
-        <meshBasicMaterial color="#00ff00" /> {/* Green Planet */}
+        <meshBasicMaterial color="#703764" /> 
       </Sphere>
       <Sphere ref={(el) => (planets.current[2] = el)} scale={[10, 10, 10]} position={[-20, -10, 100]}>
-        <meshBasicMaterial color="#aa0dd0" /> {/* Purple Planet */}
+        <meshBasicMaterial color="#151140" />
       </Sphere>
       {/* ...add more planets similarly */}
       {/* Add particle blasting effect */}
@@ -97,10 +96,9 @@ export const Background = () => {
           </Sphere>
         ))}
       </group>
-      {/* Add nebula color */}
       <mesh>
         <sphereGeometry args={[1000, 32, 32]} />
-        <meshBasicMaterial color="#f000ff" side={THREE.BackSide} />
+        <meshBasicMaterial color="#2A4B7C" side={THREE.BackSide} />
       </mesh>
     </group>
   );
